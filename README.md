@@ -65,9 +65,13 @@ and the best estimate is given by maximizing the score
 
 # Evaluation
 
-A corase GNSS position is used as search space origin. The search space is discritized with a user defined metric *e*.
+The approach is tested in an inner city area characterized by a dense building structures. A corase GNSS position is used as search space origin. The search space is discritized with a user defined metric *e*.
 
 <div align=center>
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Map.PNG" width="780">
 </div>
+
+The test set consists of 1915 epoches with a time interval of 0.1 second between two epoches. The error distribution over 1915 epoches are displayed below
+
+
 
