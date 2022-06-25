@@ -15,36 +15,44 @@ In this work, we introduce a new approach of robust localization technique for s
 Specifically, we use the normal vectors of map point cloud to help allocate the car sensor scans. Point pairs are associated by comparing there distances inbetween. For a point pair of a map point and a measurement point in 2D case, an optimal translation ![](http://latex.codecogs.com/svg.latex?$t_{xy}$) needs to be determined to align two points, or in a point-to-plane registration task, to align the measurement point to the line depicted by the normal vector of the map point. The residual r is defined as the distance between the translated measurement point and the plane. Hence, we have the observation equation
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq1.PNG" height="80">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq1.PNG" height="60">
 </div>
 
 or
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.PNG" height="180">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.PNG" height="60">
 </div>
 
 where 
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.1.PNG" height="180">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.1.PNG" height="60">
 </div>
 
 is the observation term. Generelize the equation to all point pairs, which gives the observation equation in matrix form
 
-![image](https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq3.PNG)
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq3.PNG" height="60">
+</div>
 
 and the matrix A is the k x 2 matrix contains normal vectors of map points, which gives the indications of the estimation in the consensus set. The uncertainty of the measurement can be discribed by 
 
-![image](https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq4.PNG)
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq4.PNG" height="60">
+</div>
 
 For a qualitative comparision, we characterize the information of the observation by defining a score function
 
-![image](https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq5.PNG)
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq5.PNG" height="60">
+</div>
 
 and the best estimate is given by maximizing the score
 
-![image](https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq6.PNG)
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq6.PNG" height="60">
+</div>
 
 
 # Evaluation
