@@ -98,4 +98,4 @@ From search approach perspective, we enable two maximum consensus based approach
 
 Some other setup are implemented as run configuration, e.g., ***remove ground points***, ***using weighted score***, ***downsampling of measurements***.
 
-Besides, we further implemented an ICP using the outcome of maximum consensus search, to further conduct a fine and continious search.
+Besides, an ICP step using the outcome of maximum consensus search is implemented to further conduct a fine and continious search.
