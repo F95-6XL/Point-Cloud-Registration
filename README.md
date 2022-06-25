@@ -5,6 +5,10 @@
 # Background
 High integrity localization is a fundamental task for an autonomous driving system. Standard localization approaches are usually accomplished by point cloud registration, which is often based on (recursive) least squares estimation, for example, using Kalman filters. However, due to the susceptibility of least squares minimization to outliers, it is not robust.
 
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/PointCloudForLocalization.PNG" width="580">
+</div>
+
 # Approach
 In this work, we introduce a new approach of robust localization technique for self-driving vehicle. The Maximum Consensus Technique is generelized to the application of point cloud registration, which bases on a L0 loss. Therefore, it is much robuster than the classic least squares based approach, which uses the L2 loss. A comparision of L0, L1 and L2 loss functions is showed here
 
@@ -62,4 +66,8 @@ and the best estimate is given by maximizing the score
 # Evaluation
 
 A corase GNSS position is used as search space origin. The search space is discritized with a user defined metric *e*.
+
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Map.PNG" width="780">
+</div>
 
