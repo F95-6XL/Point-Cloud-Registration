@@ -73,6 +73,8 @@ The approach is tested in an inner city area characterized by a dense building s
 
 The test set consists of 1915 epoches with a time interval of 0.1 second between two epoches. The error distribution over 1915 epoches are displayed below
 
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Error in X.PNG" width="380"><img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Error in Y.PNG" width="340">
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Error in X.PNG" width="380"><img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Error in Y.PNG" width="360">
+</div>
 
 
