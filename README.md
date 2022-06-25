@@ -44,6 +44,8 @@ and the matrix **A** is the *k x 2* matrix contains normal vectors of map points
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq4.PNG" height="40">
 </div>
 
+with an omitted constant (co-factor). 
+
 For a qualitative comparision, we characterize the information of the observation by defining a score function
 
 <div align=center>
