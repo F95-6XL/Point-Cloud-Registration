@@ -1,6 +1,6 @@
 # Point-Cloud-Registration
 2021/10/10:
-This is the repository of the master thesis of Yimin Zhang.
+*This is the repository of the master thesis of Yimin Zhang.
 
 # Background
 High integrity localization is a fundamental task for an autonomous driving system. Standard localization approaches are usually accomplished by point cloud registration, which is often based on (recursive) least squares estimation, for example, using Kalman filters. However, due to the susceptibility of least squares minimization to outliers, it is not robust.
@@ -12,7 +12,7 @@ In this work, we introduce a new approach of robust localization technique for s
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/LossFunctions.PNG" width="580">
 </div>
 
-Specifically, we use the normal vectors of map point cloud to help allocate the car sensor scans. Point pairs are associated by comparing there distances inbetween. For a point pair of a map point and a measurement point in 2D case, an optimal translation ![](http://latex.codecogs.com/svg.latex?$t_{xy}$) needs to be determined to align two points, or in a point-to-plane registration task, to align the measurement point to the line depicted by the normal vector of the map point. The residual r is defined as the distance between the translated measurement point and the plane. Hence, we have the observation equation
+Specifically, we use the normal vectors of map point cloud to help allocate the car sensor scans. Point pairs are associated by comparing there distances inbetween. For a point pair of a map point and a measurement point in 2D case, an optimal translation *t* needs to be determined to align two points, or in a point-to-plane registration task, to align the measurement point to the line depicted by the normal vector of the map point. The residual r is defined as the distance between the translated measurement point and the plane. Hence, we have the observation equation
 
 <div align=center>
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq1.PNG" height="60">
@@ -36,7 +36,7 @@ is the observation term. Generelize the equation to all point pairs, which gives
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq3.PNG" height="30">
 </div>
 
-and the matrix A is the k x 2 matrix contains normal vectors of map points, which gives the indications of the estimation in the consensus set. The uncertainty of the measurement can be discribed by 
+and the matrix **A** is the *k x 2* matrix contains normal vectors of map points, which gives the indications of the estimation in the consensus set. The uncertainty of the measurement can be discribed by 
 
 <div align=center>
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq4.PNG" height="40">
