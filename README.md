@@ -38,7 +38,7 @@ Generelize the equation to all point pairs, we have the observation equation in 
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq3.PNG" height="30">
 </div>
 
-and the matrix **A** is the *k x 2* matrix contains normal vectors of map points. And here comes the difference. Instead of minimizing the residual ***r*** in common approaches, we focus on the information provided by the measurements. Matrix **A**  gives the indications of the estimation in the consensus set. The uncertainty of the measurement can be discribed by 
+and the matrix **A** is the *k x 2* matrix contains normal vectors of map points. And here comes the difference. Instead of minimizing the residual ***r*** in common approaches, we focus on the information provided by the measurements. Matrix **A**  contains all "votes" of the map points in the consensus set, which then discribes the indications of the measurement in each direction. Hence, the uncertainty of the measurement can be discribed by 
 
 <div align=center>
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq4.PNG" height="40">
