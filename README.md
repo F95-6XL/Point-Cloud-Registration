@@ -89,13 +89,13 @@ The result shows an average localization error of less than *0.01m* in both dire
 
 The Approach is implemented in Python and is not yet optimized. 
 
-From search dimension perspective, We support 4 modes of search, namely xy-translation, xy-translation + z-rotation, xyz-translation, xyz-translation + z-rotation.
+From search dimension perspective, We support 4 modes of search, namely ***xy-translation***, ***xy-translation + z-rotation***, ***xyz-translation***, ***xyz-translation + z-rotation***.
 
 From search approach perspective, we enable two maximum consensus based approach of search:
 
 1. Use count of point matches as score to build up accumulator, which is called version 1.0 
 2. Use trace of covariance matrix as score to build up accumulator, which is called version 1.0 
 
-Some other setup are implemented as run configuration, e.g., remove ground points, using weighted score, downsampling of measurements.
+Some other setup are implemented as run configuration, e.g., ***remove ground points***, ***using weighted score***, ***downsampling of measurements***.
 
 Besides, we further implemented an ICP using the outcome of maximum consensus search, to further conduct a fine and continious search.
