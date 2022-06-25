@@ -77,11 +77,11 @@ The test set consists of 1915 epoches with a time interval of 0.1 second between
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Measurements.PNG" width="880">
 </div>
 
-The error distribution over 1915 epoches are displayed below
+The approach is then evaluated on the test data set. The error distribution over all 1915 epoches are displayed below
 
 <div align=center>
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Error in X.PNG" width="380"><img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Error in Y.PNG" width="360">
 </div>
 
-The result shows an average localization error of less than *0.01m* in both direction. The maximum error recorded is *0.3m*. 
+The result shows an average localization error of less than *0.01m* in both direction. And the maximum error recorded is *0.3m*. The Evaluation shows a generally high intergriy localization results.
 
