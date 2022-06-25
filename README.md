@@ -57,5 +57,5 @@ and the best estimate is given by maximizing the score
 
 # Evaluation
 
-corase GNSS position is used as search space origin
-The title of this thesis is "Investigation of maximum consensus techniques for robust localization".
+A corase GNSS position is used as search space origin. The search space is discritized with a user defined metric *e*.
+
