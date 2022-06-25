@@ -6,7 +6,7 @@
 High integrity localization is a fundamental task for an autonomous driving system. Standard localization approaches are usually accomplished by point cloud registration, which is often based on (recursive) least squares estimation, for example, using Kalman filters. However, due to the susceptibility of least squares minimization to outliers, it is not robust.
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/PointCloudForLocalization.PNG" width="580">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/PointCloudForLocalization.png" width="580">
 </div>
 
 # Approach
