@@ -65,7 +65,7 @@ and the best estimate is given by maximizing the score
 
 # Evaluation
 
-The approach is tested in an inner city area characterized by a dense building structures. A corase GNSS position is used as search space origin. The search space is discritized with a user defined metric *e*.
+The approach is tested in an inner city area characterized by a dense building structures. A corase GNSS position is used as search space origin. The search space is discritized with a user defined metric *e*. Here we choose the grid size to be *0.02m*.
 
 <div align=center>
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Map.PNG" width="780">
@@ -77,4 +77,5 @@ The test set consists of 1915 epoches with a time interval of 0.1 second between
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Error in X.PNG" width="380"><img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/Error in Y.PNG" width="360">
 </div>
 
+The result shows an average localization error of less than *0.01m* in both direction. The maximum error recorded is *0.3m*. 
 
