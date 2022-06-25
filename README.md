@@ -21,13 +21,13 @@ Specifically, we use the normal vectors of map point cloud to help allocate the 
 or
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.PNG" height="30">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.PNG" height="35">
 </div>
 
 where 
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.1.PNG" height="30">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.1.PNG" height="35">
 </div>
 
 is the observation term. Generelize the equation to all point pairs, which gives the observation equation in matrix form
