@@ -1,6 +1,6 @@
 # Point-Cloud-Registration
 2021/10/10:
-*This is the repository of the master thesis of Yimin Zhang.*
+*This is the repository of the master thesis of Yimin Zhang from Leibniz University of Hannover, Germany.*
 
 # Background
 High integrity localization is a fundamental task for an autonomous driving system. Standard localization approaches are usually accomplished by point cloud registration, which is often based on (recursive) least squares estimation, for example, using Kalman filters. However, due to the susceptibility of least squares minimization to outliers, it is not robust.
