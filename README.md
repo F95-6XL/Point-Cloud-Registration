@@ -21,19 +21,19 @@ Specifically, we use the normal vectors of map point cloud to help allocate the 
 or
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.PNG" height="50">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.PNG" height="40">
 </div>
 
 where 
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.1.PNG" height="50">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.1.PNG" height="40">
 </div>
 
 is the observation term. Generelize the equation to all point pairs, which gives the observation equation in matrix form
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq3.PNG" height="40">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq3.PNG" height="30">
 </div>
 
 and the matrix A is the k x 2 matrix contains normal vectors of map points, which gives the indications of the estimation in the consensus set. The uncertainty of the measurement can be discribed by 
@@ -45,13 +45,13 @@ and the matrix A is the k x 2 matrix contains normal vectors of map points, whic
 For a qualitative comparision, we characterize the information of the observation by defining a score function
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq5.PNG" height="40">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq5.PNG" height="60">
 </div>
 
 and the best estimate is given by maximizing the score
 
 <div align=center>
-<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq6.PNG" height="40">
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq6.PNG" height="60">
 </div>
 
 
