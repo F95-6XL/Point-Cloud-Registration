@@ -1,6 +1,6 @@
 # Alignment of scans using a KDT and numpy.
 #
-# (c) 01 NOV 2020 Claus Brenner
+# (c) 01 NOV 2020 Yimin Zhang
 #
 from enum import ENUM
 import numpy as np
@@ -145,17 +145,19 @@ def align_two_scans(tree_0,points_0, points_1,
                         heading_search_radius, search_model, z_scale)
     Accumulator.calc_shift()
     
+    result = Accumulator.shift[0:2]
+    
     # Posibility of further optimization
     # Do an extra ICP based on outcomes of maximum consensus approach
-    if False:
+    if True:
         matched_map_points_unique, matched_scan_points_unique, _, _ = Accumulator.find_matched_points(points_0, points_1, matched_points_idx[:,0],
                                                                   matched_points_idx[:,1],matched_points_idx[:,2:5], unique=True)
     
         results_icp2 = ICP_normal_vectors2(tree_0, matched_scan_points_unique, points_0.copy(),
                                           -Accumulator.shift, z_scale, search_model, rotation_center, use_weight=True)
-        b = Accumulator.shift[0:2] - results_icp2[0:2].flatten()
+        result -= - results_icp2[0:2].flatten()
     
-    return accumulator, Accumulator.shift[0:3]
+    return accumulator, result
     
 
 
@@ -252,11 +254,11 @@ if __name__ == "__main__":
         
     # Create container to store results over all epoches
     if search_model == 'xy':
-        max_cons_shift = np.empty((0, 3))
+        max_cons_shift = np.empty((0, 2))
     elif search_model == 'xyzheading':
-        max_cons_shift = np.empty((0, 5))
-    else:
         max_cons_shift = np.empty((0, 4))
+    else:
+        max_cons_shift = np.empty((0, 3))
         
         
         
