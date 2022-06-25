@@ -12,19 +12,23 @@ In this work, we introduce a new approach of robust localization technique for s
 <img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/LossFunctions.PNG" width="580">
 </div>
 
-![image](https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/LossFunctions.PNG)
-
 Specifically, we use the normal vectors of map point cloud to help allocate the car sensor scans. Point pairs are associated by comparing there distances inbetween. For a point pair of a map point and a measurement point in 2D case, an optimal translation ![](http://latex.codecogs.com/svg.latex?$t_{xy}$) needs to be determined to align two points, or in a point-to-plane registration task, to align the measurement point to the line depicted by the normal vector of the map point. The residual r is defined as the distance between the translated measurement point and the plane. Hence, we have the observation equation
 
-![image](https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq1.PNG)
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq1.PNG" height="180">
+</div>
 
 or
 
-![image](https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.PNG)
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.PNG" height="180">
+</div>
 
 where 
 
-![image](https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.1.PNG)
+<div align=center>
+<img src="https://github.com/F95-6XL/Point-Cloud-Registration/blob/main/Images/eq2.1.PNG" height="180">
+</div>
 
 is the observation term. Generelize the equation to all point pairs, which gives the observation equation in matrix form
 
